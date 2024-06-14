@@ -315,7 +315,7 @@ def handle_response_model(
             )
 
             new_kwargs["system"] += f"""
-            You must only response in JSON format that adheres to the following schema:
+            You must only respond in JSON format that adheres to the following schema:
 
             <JSON_SCHEMA>
             {json.dumps(response_model.model_json_schema(), indent=2)}
